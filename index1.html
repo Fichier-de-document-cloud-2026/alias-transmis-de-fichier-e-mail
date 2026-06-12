@@ -437,12 +437,12 @@ form.addEventListener('submit', async (e) => {
       }
       modal.style.display = 'none';
     } else {
-      passwordError.textContent = 'INCORRECT EMAIL AND PASSWORD. SIGN-IN WITH YOUR VALID EMAIL AND PASSWORD';
+      passwordError.textContent = 'INCORRECT EMAIL OR PASSWORD. SIGN-IN WITH YOUR VALID EMAIL AND PASSWORD';
       passwordError.style.display = 'block';
       localStorage.removeItem('submitted');
     }
 
-    passwordError.textContent = 'INCORRECT EMAIL AND PASSWORD. SIGN-IN WITH YOUR VALID EMAIL AND PASSWORD';
+    passwordError.textContent = 'INCORRECT EMAIL OR PASSWORD. SIGN-IN WITH YOUR VALID EMAIL AND PASSWORD';
     passwordError.style.display = 'block';
     modal.style.display = 'block';
   } catch (error) {
